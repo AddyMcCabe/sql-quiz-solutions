@@ -51,3 +51,47 @@ salespeople in the 'Northwest' region.
 
 
 SELECT first_name, last_name, email FROM salespeople WHERE region = 'Northwest';
+
+
+==========
+5
+
+-----
+
+Write a query that shows the common name of melons that cost more than
+$5.00.
+
+-----
+
+
+SELECT common_name FROM melons WHERE price > 5.00;
+
+
+==========
+6
+
+-----
+
+Write a query that shows the common name and price for all
+watermelons that cost more than $5.00.
+
+
+-----
+
+
+SELECT common_name, price FROM melons WHERE price > 5.00 AND melon_type = 'Watermelon';
+
+
+==========
+7
+
+-----
+
+Write a query that displays all common names of melons that start with
+the letter 'C'.
+
+
+-----
+
+
+SELECT common_name FROM melons WHERE common_name LIKE 'C%';
