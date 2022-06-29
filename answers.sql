@@ -95,3 +95,47 @@ the letter 'C'.
 
 
 SELECT common_name FROM melons WHERE common_name LIKE 'C%';
+
+
+==========
+8
+
+-----
+
+Write a query that shows the common name of any melon with 'Golden'
+anywhere in the common name.
+
+
+-----
+
+
+SELECT common_name FROM melons WHERE common_name LIKE '%Golden%';
+
+
+==========
+9
+
+-----
+
+Write a query that shows all the distinct regions that a salesperson can belong to.
+
+
+-----
+
+
+SELECT DISTINCT region FROM salespeople;
+
+
+==========
+10
+
+-----
+
+Write a query that shows the emails of all salespeople from both the
+Northwest and Southwest regions.
+
+
+-----
+
+
+SELECT email FROM salespeople WHERE region = 'Northwest' OR region = 'Southwest';
